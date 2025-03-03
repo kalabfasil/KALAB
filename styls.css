@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "poppins", sans-serif;
+}
+:root {
+    --bg-color: #8bff81;
+}
+html{
+    font-size: 62.5%;
+    overflow: hidden;
+}
+body{
+    background:  rgb(255, 255, 255);
+    color: #686868;
+}
+.header{
+    position: relative;
+    font-size: x-large;
+    top: 0;
+    left: 0;
+    width: 100;
+    padding: 1rem;
+    background: rgb(202, 202, 202);
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 3rem;
+    color: var(--bg-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.navbar a{
+    font-size: 1.8rem;
+    color: rgb(29, 28, 28);
+    margin-left: 2rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: rgb(63, 61, 61);
+    border-bottom: 3px solid #252525;
+}
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 10rem;
+}
+.home{
+    display: flex;
+    
+    justify-content: end;
+    align-items: start;
+    flex-direction: column;
+    text-align: left;
+    margin-top: -10rem;
+}
+
+.home .home-content {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+span{
+    color: #4cbb30;
+}
+.logo span{
+    color: #8bff81;
+}
+.home-content h3{
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 3.5rem;
+}
+.home-content h1{
+    font-weight: 700;
+    font-size: 7rem;
+    margin-top: 1.5rem;
+    line-height: 1;
+}
+.home-img{
+    border-radius: 50%;
+}
+.home-img img{
+    position: absolute;
+    right: 10rem;
+    top: 3rem;
+    width: 22vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--bg-color);
+    cursor: pointer;
+}
+.home-img img:hover{
+    box-shadow: 0 0 50px var(--bg-color);
+}
+.home-content p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    max-width: 1000px;
+}
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: #71f565;
+    border-radius: 3rem;
+    font-size: 1.6rem;
+    color: rgb(255, 255, 255);
+    border: 2px solid transparent;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.4s ease-in-out;
+    cursor: pointer; 
+}
+.btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--bg-color);
+}
+.heading{
+    text-align: center;
+    font-size: 4rem;
+}
+.abouts-content h2{
+    text-align: center;
+    line-height: 1.5;
+}
+.abouts-content h3{
+    font-size: 2.6rem;
+}
+.abouts-content p{
+    text-align: center;
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+.homes-img {
+    border-radius: 10%;
+}
+.homes-img img {
+    position: relative;
+    width: 27vw;
+    height: 27vw;
+    border-radius: 10%;
+    box-shadow: 0 0 25px var(--main-color);
+    cursor: pointer;
+}
+.homes-img img:hover{
+    transform: scale(1.01);
+    filter: drop-shadow(0 0 25px var(--bg-color));
+}
+.homes-content{
+    display: flex;
+    text-align: right;
+    justify-content: right;
+    margin-top: -30rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.homes .homes-content {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+html::-webkit-scrollbar {
+    width: 15.8rem;
+ }
+ html::-webkit-scrollbar-track {
+     background: var(--bg-color);
+ }
+ html::-webkit-scrollbar-thumb {
+     background: var(--bg-color);
+ }
+
+
+  
+  
