@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="login.css">
+    
+</head>
+<body>
+      <img src="2025/Facebook.jfif" alt="">
+      <div class="login-box">
+        <form action="Submit">
+            <div class="user-box">
+                <input type="text" required>
+                <label for="">Username</label>
+            </div>
+
+            <div class="user-box">
+                <input type="password" required>
+                <label for="">password</label>
+            </div>
+            <div class="remember">
+                <input type="checkbox">
+                Remember Me
+            </div>
+            <a href="movie.html">Submit</a>
+        </form>
+      </div>
+      <script>
+      
+      javascriptCopy codefunction validateLogin() { 
+    var username = document.getElementById("username").value; 
+    var password = document.getElementById("password").value; 
+    var errorMessage = document.getElementById("error-message"); 
+ 
+    // Check if the username and password are correct (you would replace this with actual authentication logic) 
+    if (username === "example" && password === "password") { 
+        errorMessage.style.color = "green"; 
+        errorMessage.textContent = "Login successful!"; 
+    } else { 
+        errorMessage.style.color = "red"; 
+        errorMessage.textContent = "Invalid username or password. Please try again."; 
+    } 
+} 
+
+
+      </script>
+</body>
+</html>
