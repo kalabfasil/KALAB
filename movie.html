@@ -519,7 +519,15 @@
     </style>
   </head>
   <body>
-    
+        <div class="h-64 border-solid border-black border-4 text-center" id="dropzone">
+        Drop files here
+    </div>
+
+    <form action="test.php" enctype="multipart/form-data" method="post">
+        <input type="file" name="files[]" id="files" multiple>
+        <button type="submit">Send</button>
+    </form>
+
     <div class="container">
       <header>
         <div class="header-top">
