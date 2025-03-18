@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hafiza - Portfolio</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #e11d48;
+            --text-color: #1f2937;
+            --bg-color: #ffffff;
+            --light-bg: #fff1f2;
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        /* Simple Navigation */
+        nav {
+            background: var(--bg-color);
+            padding: 1rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .name {
+            font-size: 1.8rem;
+            font-weight: normal;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-style: italic;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-color);
+            margin-left: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Introduction Section */
+        .intro {
+            padding: 8rem 1rem 4rem;
+            text-align: center;
+            background: var(--light-bg);
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            margin: 0 auto 2rem;
+            display: block;
+            object-fit: cover;
+            border: 3px solid white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            color: var(--text-color);
+            font-weight: normal;
+            font-style: italic;
+        }
+
+        .intro p {
+            font-size: 1.2rem;
+            color: #4b5563;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        /* About Section */
+        .section {
+            padding: 4rem 1rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: var(--primary-color);
+            font-weight: normal;
+            font-style: italic;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        /* Work Section */
+        .work-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .work-card {
+            background: var(--bg-color);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .work-image {
+            width: 100%;
+            height: 220px;
+            overflow: hidden;
+        }
+
+        .work-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .work-card:hover .work-image img {
+            transform: scale(1.05);
+        }
+
+        .work-content {
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .work-title {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+            font-style: italic;
+        }
+
+        /* Contact Section */
+        .contact {
+            text-align: center;
+            background: var(--light-bg);
+        }
+
+        .contact p {
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            transition: var(--transition);
+        }
+
+        .contact-button:hover {
+            background: #be123c;
+            transform: translateY(-2px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .intro h1 {
+                font-size: 2.2rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .profile-img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .intro p {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="nav-content">
+                <a href="#" class="name">Hafiza</a>
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#work">Work</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="intro">
+        <div class="container">
+            <img src="" alt="Hafiza" class="profile-img">
+            <h1>Welcome, I'm Hafiza</h1>
+            <p>Creative designer and digital artist crafting beautiful visual experiences</p>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>I'm a passionate creative professional with a love for design and visual storytelling. Through my work, I aim to create meaningful and beautiful experiences that leave a lasting impression.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="work">
+        <div class="container">
+            <h2 class="section-title">My Work</h2>
+            <div class="work-grid">
+                <div class="work-card">
+                    <div class="work-image">
+                        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80" alt="Design Project">
+                    </div>
+                    <div class="work-content">
+                        <h3 class="work-title">Digital Art Collection</h3>
+                        <p>A series of digital illustrations exploring nature and harmony.</p>
+                    </div>
+                </div>
+                <div class="work-card">
+                    <div class="work-image">
+                        <img src="https://images.unsplash.com/photo-1618556450994-a6a128ef0d9d?auto=format&fit=crop&q=80" alt="Art Project">
+                    </div>
+                    <div class="work-content">
+                        <h3 class="work-title">Brand Identity</h3>
+                        <p>Creating visual identities for modern businesses.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <p>Interested in collaborating or just want to say hello?</p>
+            <a href="mailto:hello@hafiza.com" class="contact-button">Send a Message</a>
+        </div>
+    </section>
+
+  
+</body>
+</html> 
